@@ -1,0 +1,71 @@
+{
+  "audio_id": "d852d1189545438ca644ac85b4bcb033",
+  "segments": [
+    {
+      "segment": 1,
+      "time_from": 0.56,
+      "time_to": 5.84,
+      "ref_from": "Basmala",
+      "ref_to": "Basmala",
+      "matched_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 2,
+      "time_from": 6.66,
+      "time_to": 14.72,
+      "ref_from": "97:1:1",
+      "ref_to": "97:1:5",
+      "matched_text": "إِنَّآ أَنزَلْنَـٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 3,
+      "time_from": 15.56,
+      "time_to": 21.355,
+      "ref_from": "97:2:1",
+      "ref_to": "97:2:5",
+      "matched_text": "وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ",
+      "confidence": 0.981,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 4,
+      "time_from": 22.195,
+      "time_to": 27.235,
+      "ref_from": "97:3:1",
+      "ref_to": "97:3:6",
+      "matched_text": "لَيْلَةُ ٱلْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ",
+      "confidence": 0.968,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 5,
+      "time_from": 28.915,
+      "time_to": 40.77,
+      "ref_from": "97:4:1",
+      "ref_to": "97:4:9",
+      "matched_text": "تَنَزَّلُ ٱلْمَلَـٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 6,
+      "time_from": 41.67,
+      "time_to": 45.97,
+      "ref_from": "97:5:1",
+      "ref_to": "97:5:5",
+      "matched_text": "سَلَـٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ",
+      "confidence": 0.957,
+      "has_missing_words": false,
+      "error": null
+    }
+  ]
+}

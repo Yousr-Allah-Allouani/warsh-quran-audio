@@ -1,0 +1,72 @@
+{
+  "audio_id": "a7c34c0e3a2d45f588c2158c42e3c0ff",
+  "segments": [
+    {
+      "segment": 1,
+      "time_from": 1.18,
+      "time_to": 6.14,
+      "ref_from": "Basmala",
+      "ref_to": "Basmala",
+      "matched_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 2,
+      "time_from": 7.04,
+      "time_to": 9.92,
+      "ref_from": "113:1:1",
+      "ref_to": "113:1:4",
+      "matched_text": "قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
+      "confidence": 0.955,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 3,
+      "time_from": 10.56,
+      "time_to": 13.64,
+      "ref_from": "113:2:1",
+      "ref_to": "113:2:4",
+      "matched_text": "مِن شَرِّ مَا خَلَقَ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 4,
+      "time_from": 14.3,
+      "time_to": 18.8,
+      "ref_from": "113:3:1",
+      "ref_to": "113:3:5",
+      "matched_text": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+      "confidence": 0.962,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 5,
+      "time_from": 19.48,
+      "time_to": 25.135,
+      "ref_from": "113:4:1",
+      "ref_to": "113:4:5",
+      "matched_text": "وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 6,
+      "time_from": 25.835,
+      "time_to": 30.355,
+      "ref_from": "113:5:1",
+      "ref_to": "113:5:5",
+      "matched_text": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+      "confidence": 0.962,
+      "has_missing_words": false,
+      "error": null
+    }
+  ],
+  "warning": "GPU quota reached — processed on CPU (slower)."
+}

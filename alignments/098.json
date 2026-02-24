@@ -1,0 +1,148 @@
+{
+  "audio_id": "0413c44ecce44015b5fc7981c12a43ac",
+  "segments": [
+    {
+      "segment": 1,
+      "time_from": 0.54,
+      "time_to": 5.7,
+      "ref_from": "Basmala",
+      "ref_to": "Basmala",
+      "matched_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم",
+      "confidence": 0.857,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 2,
+      "time_from": 6.66,
+      "time_to": 19.76,
+      "ref_from": "98:1:1",
+      "ref_to": "98:1:12",
+      "matched_text": "لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَـٰبِ وَٱلْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ ٱلْبَيِّنَةُ",
+      "confidence": 0.972,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 3,
+      "time_from": 21.115,
+      "time_to": 28.615,
+      "ref_from": "98:2:1",
+      "ref_to": "98:2:6",
+      "matched_text": "رَسُولٌ مِّنَ ٱللَّهِ يَتْلُوا۟ صُحُفًا مُّطَهَّرَةً",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 4,
+      "time_from": 29.655,
+      "time_to": 33.675,
+      "ref_from": "98:3:1",
+      "ref_to": "98:3:3",
+      "matched_text": "فِيهَا كُتُبٌ قَيِّمَةٌ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 5,
+      "time_from": 34.655,
+      "time_to": 48.73,
+      "ref_from": "98:4:1",
+      "ref_to": "98:4:11",
+      "matched_text": "وَمَا تَفَرَّقَ ٱلَّذِينَ أُوتُوا۟ ٱلْكِتَـٰبَ إِلَّا مِن بَعْدِ مَا جَآءَتْهُمُ ٱلْبَيِّنَةُ",
+      "confidence": 0.987,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 6,
+      "time_from": 50.91,
+      "time_to": 70.665,
+      "ref_from": "98:5:1",
+      "ref_to": "98:5:13",
+      "matched_text": "وَمَآ أُمِرُوٓا۟ إِلَّا لِيَعْبُدُوا۟ ٱللَّهَ مُخْلِصِينَ لَهُ ٱلدِّينَ حُنَفَآءَ وَيُقِيمُوا۟ ٱلصَّلَوٰةَ وَيُؤْتُوا۟ ٱلزَّكَوٰةَ ۚ",
+      "confidence": 0.93,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 7,
+      "time_from": 71.725,
+      "time_to": 74.945,
+      "ref_from": "98:5:14",
+      "ref_to": "98:5:16",
+      "matched_text": "وَذَٰلِكَ دِينُ ٱلْقَيِّمَةِ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 8,
+      "time_from": 76.365,
+      "time_to": 88.96,
+      "ref_from": "98:6:1",
+      "ref_to": "98:6:12",
+      "matched_text": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَـٰبِ وَٱلْمُشْرِكِينَ فِى نَارِ جَهَنَّمَ خَـٰلِدِينَ فِيهَآ ۚ",
+      "confidence": 0.986,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 9,
+      "time_from": 89.94,
+      "time_to": 97.46,
+      "ref_from": "98:6:13",
+      "ref_to": "98:6:16",
+      "matched_text": "أُو۟لَـٰٓئِكَ هُمْ شَرُّ ٱلْبَرِيَّةِ",
+      "confidence": 0.946,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 10,
+      "time_from": 98.88,
+      "time_to": 113.515,
+      "ref_from": "98:7:1",
+      "ref_to": "98:7:9",
+      "matched_text": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ أُو۟لَـٰٓئِكَ هُمْ خَيْرُ ٱلْبَرِيَّةِ",
+      "confidence": 0.978,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 11,
+      "time_from": 115.855,
+      "time_to": 134.61,
+      "ref_from": "98:8:1",
+      "ref_to": "98:8:12",
+      "matched_text": "جَزَآؤُهُمْ عِندَ رَبِّهِمْ جَنَّـٰتُ عَدْنٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ خَـٰلِدِينَ فِيهَآ أَبَدًا ۖ",
+      "confidence": 0.984,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 12,
+      "time_from": 135.65,
+      "time_to": 139.61,
+      "ref_from": "98:8:13",
+      "ref_to": "98:8:17",
+      "matched_text": "رَّضِىَ ٱللَّهُ عَنْهُمْ وَرَضُوا۟ عَنْهُ ۚ",
+      "confidence": 0.954,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 13,
+      "time_from": 141.185,
+      "time_to": 144.425,
+      "ref_from": "98:8:18",
+      "ref_to": "98:8:21",
+      "matched_text": "ذَٰلِكَ لِمَنْ خَشِىَ رَبَّهُۥ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    }
+  ]
+}

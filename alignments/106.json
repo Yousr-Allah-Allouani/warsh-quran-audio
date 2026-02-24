@@ -1,0 +1,61 @@
+{
+  "audio_id": "d73bb3e2ddc04aeb8c078d3e77a6a893",
+  "segments": [
+    {
+      "segment": 1,
+      "time_from": 0.54,
+      "time_to": 5.56,
+      "ref_from": "Basmala",
+      "ref_to": "Basmala",
+      "matched_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم",
+      "confidence": 0.909,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 2,
+      "time_from": 6.38,
+      "time_to": 11.56,
+      "ref_from": "106:1:1",
+      "ref_to": "106:1:2",
+      "matched_text": "لِإِيلَـٰفِ قُرَيْشٍ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 3,
+      "time_from": 12.78,
+      "time_to": 22.155,
+      "ref_from": "106:2:1",
+      "ref_to": "106:2:4",
+      "matched_text": "إِۦلَـٰفِهِمْ رِحْلَةَ ٱلشِّتَآءِ وَٱلصَّيْفِ",
+      "confidence": 0.991,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 4,
+      "time_from": 23.315,
+      "time_to": 28.315,
+      "ref_from": "106:3:1",
+      "ref_to": "106:3:4",
+      "matched_text": "فَلْيَعْبُدُوا۟ رَبَّ هَـٰذَا ٱلْبَيْتِ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 5,
+      "time_from": 29.375,
+      "time_to": 42.99,
+      "ref_from": "106:4:1",
+      "ref_to": "106:4:7",
+      "matched_text": "ٱلَّذِىٓ أَطْعَمَهُم مِّن جُوعٍ وَءَامَنَهُم مِّنْ خَوْفٍ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    }
+  ],
+  "warning": "GPU quota reached — processed on CPU (slower)."
+}

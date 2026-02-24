@@ -1,0 +1,31 @@
+# ── Large model directories (too big for GitHub, use Git LFS or HF Hub) ──────
+tarteel-base-ct2/
+turbo-ct2/
+ijyad-ct2/
+whisper-warsh-v1/
+
+# ── Large audio files ─────────────────────────────────────────────────────────
+# audio/002.mp3 (Al-Baqara) is 154MB — exceeds GitHub's 100MB per-file limit
+# All other surahs (audio/001.mp3, audio/003.mp3 – audio/114.mp3) ARE included
+audio/002.mp3
+
+# ── Dataset audio clips (1.9GB) — upload to HuggingFace Datasets ─────────────
+dataset/audio/
+
+# ── Python cache ─────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+*.egg-info/
+
+# ── Logs / temp ───────────────────────────────────────────────────────────────
+*.log
+*.tmp
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── HuggingFace cache ─────────────────────────────────────────────────────────
+~/.cache/huggingface/

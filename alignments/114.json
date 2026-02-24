@@ -1,0 +1,83 @@
+{
+  "audio_id": "4e1aecf8cea04207b7733b0a0e213172",
+  "segments": [
+    {
+      "segment": 1,
+      "time_from": 0.58,
+      "time_to": 5.38,
+      "ref_from": "Basmala",
+      "ref_to": "Basmala",
+      "matched_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 2,
+      "time_from": 6.32,
+      "time_to": 11.24,
+      "ref_from": "114:1:1",
+      "ref_to": "114:1:4",
+      "matched_text": "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+      "confidence": 0.944,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 3,
+      "time_from": 11.92,
+      "time_to": 15.86,
+      "ref_from": "114:2:1",
+      "ref_to": "114:2:2",
+      "matched_text": "مَلِكِ ٱلنَّاسِ",
+      "confidence": 0.889,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 4,
+      "time_from": 16.68,
+      "time_to": 20.855,
+      "ref_from": "114:3:1",
+      "ref_to": "114:3:2",
+      "matched_text": "إِلَـٰهِ ٱلنَّاسِ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 5,
+      "time_from": 21.615,
+      "time_to": 28.375,
+      "ref_from": "114:4:1",
+      "ref_to": "114:4:4",
+      "matched_text": "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 6,
+      "time_from": 29.335,
+      "time_to": 35.675,
+      "ref_from": "114:5:1",
+      "ref_to": "114:5:5",
+      "matched_text": "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 7,
+      "time_from": 36.275,
+      "time_to": 42.09,
+      "ref_from": "114:6:1",
+      "ref_to": "114:6:3",
+      "matched_text": "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    }
+  ],
+  "warning": "GPU quota reached — processed on CPU (slower)."
+}

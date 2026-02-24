@@ -1,0 +1,50 @@
+{
+  "audio_id": "33c77b5b3eaa4f8399cf124583d328a6",
+  "segments": [
+    {
+      "segment": 1,
+      "time_from": 0.52,
+      "time_to": 5.4,
+      "ref_from": "Basmala",
+      "ref_to": "Basmala",
+      "matched_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم",
+      "confidence": 0.81,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 2,
+      "time_from": 6.0,
+      "time_to": 7.2,
+      "ref_from": "103:1:1",
+      "ref_to": "103:1:1",
+      "matched_text": "وَٱلْعَصْرِ",
+      "confidence": 0.857,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 3,
+      "time_from": 8.16,
+      "time_to": 12.7,
+      "ref_from": "103:2:1",
+      "ref_to": "103:2:4",
+      "matched_text": "إِنَّ ٱلْإِنسَـٰنَ لَفِى خُسْرٍ",
+      "confidence": 0.95,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 4,
+      "time_from": 14.1,
+      "time_to": 25.555,
+      "ref_from": "103:3:1",
+      "ref_to": "103:3:9",
+      "matched_text": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    }
+  ],
+  "warning": "GPU quota reached — processed on CPU (slower)."
+}

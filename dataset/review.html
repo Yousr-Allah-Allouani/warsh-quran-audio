@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warsh Dataset Review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #FAF6F1;
+      --bg-card: #FFFFFF;
+      --bg-warm: #F3EDE4;
+      --border: #E8DFD3;
+      --border-focus: #C4B5A3;
+      --text: #2C2417;
+      --text-secondary: #8C7E6E;
+      --text-muted: #B5A899;
+      --blue: #2E5C9A;
+      --blue-light: #E8EFF8;
+      --blue-dark: #1E3D66;
+      --green: #3D7C5F;
+      --green-light: #E6F2EC;
+      --red: #A04040;
+      --red-light: #F8ECEC;
+      --amber: #9A7B2E;
+      --amber-light: #F8F2E4;
+      --accent: #C4985A;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 32px 20px 48px;
+    }
+
+    /* Header */
+    #header {
+      direction: ltr;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    #header h1 {
+      font-family: 'Cormorant Garamond', 'Georgia', serif;
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--blue-dark);
+      letter-spacing: 0.5px;
+    }
+    #header p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    /* Load area */
+    #load-area {
+      background: var(--bg-card);
+      border: 2px dashed var(--border);
+      border-radius: 16px;
+      padding: 56px 40px;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      max-width: 560px;
+      transition: border-color 0.25s, box-shadow 0.25s;
+    }
+    #load-area:hover {
+      border-color: var(--accent);
+      box-shadow: 0 4px 24px rgba(196, 152, 90, 0.1);
+    }
+    #load-area .icon { font-size: 28px; margin-bottom: 12px; }
+    #load-area p { color: var(--text-secondary); font-size: 14px; direction: ltr; }
+    #load-area strong { color: var(--blue); }
+    #load-area input { display: none; }
+
+    /* App container */
+    #app { display: none; width: 100%; max-width: 640px; }
+
+    /* Progress bar */
+    #progress-bar {
+      width: 100%;
+      height: 3px;
+      background: var(--border);
+      border-radius: 2px;
+      margin-bottom: 24px;
+      overflow: hidden;
+    }
+    #progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--blue), var(--accent));
+      transition: width 0.3s ease;
+      border-radius: 2px;
+    }
+
+    /* Stats */
+    #stats {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 24px;
+      direction: ltr;
+      flex-wrap: wrap;
+    }
+    .stat {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 8px 14px;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+    .stat span { color: var(--text); font-weight: 600; }
+    .stat.flagged span { color: var(--red); }
+    .stat.good span { color: var(--green); }
+
+    /* Main card */
+    #card {
+      background: var(--bg-card);
+      border-radius: 20px;
+      padding: 32px;
+      width: 100%;
+      margin-bottom: 16px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 16px rgba(44, 36, 23, 0.04);
+      transition: border-color 0.25s, box-shadow 0.25s;
+    }
+    #card.flagged {
+      border-color: var(--red);
+      box-shadow: 0 2px 16px rgba(160, 64, 64, 0.08);
+    }
+    #card.verified {
+      border-color: var(--green);
+      box-shadow: 0 2px 16px rgba(61, 124, 95, 0.08);
+    }
+
+    /* Reference row */
+    #ref {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      direction: ltr;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    #ref .badge {
+      background: var(--bg-warm);
+      border-radius: 8px;
+      padding: 5px 12px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+    #confidence-badge {
+      padding: 5px 12px;
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
+    .conf-high { background: var(--green-light); color: var(--green); }
+    .conf-mid  { background: var(--amber-light); color: var(--amber); }
+    .conf-low  { background: var(--red-light); color: var(--red); }
+
+    /* Warsh text */
+    #warsh-text {
+      font-family: 'Amiri', 'Traditional Arabic', serif;
+      font-size: 34px;
+      line-height: 2;
+      text-align: center;
+      color: var(--text);
+      margin: 24px 0;
+      padding: 12px 0;
+    }
+
+    /* Whisper toggle */
+    #whisper-toggle {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-align: center;
+      margin-bottom: 6px;
+      direction: ltr;
+      cursor: pointer;
+      user-select: none;
+      transition: color 0.2s;
+    }
+    #whisper-toggle:hover { color: var(--text-secondary); }
+    #whisper-text {
+      font-size: 13px;
+      text-align: center;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      display: none;
+      background: var(--bg-warm);
+      border-radius: 10px;
+      padding: 10px 16px;
+      direction: rtl;
+    }
+
+    /* Audio player */
+    #audio-wrap {
+      background: var(--bg-warm);
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 8px;
+    }
+    audio {
+      width: 100%;
+      height: 36px;
+      border-radius: 8px;
+    }
+    #meta-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-align: center;
+      direction: ltr;
+      margin-bottom: 24px;
+      letter-spacing: 0.3px;
+    }
+    .align-ok { color: var(--green); }
+    .align-warn { color: var(--amber); }
+    .align-bad { color: var(--red); }
+
+    /* Action buttons */
+    #actions {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+    button {
+      border: none;
+      border-radius: 12px;
+      padding: 11px 22px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      font-family: 'Inter', sans-serif;
+    }
+    button:active { transform: scale(0.97); }
+    button:disabled { opacity: 0.3; cursor: not-allowed; }
+
+    .btn-nav {
+      background: var(--bg-warm);
+      color: var(--text-secondary);
+      direction: ltr;
+    }
+    .btn-nav:hover:not(:disabled) { background: var(--border); }
+
+    #btn-flag {
+      background: var(--red-light);
+      color: var(--red);
+    }
+    #btn-flag:hover:not(:disabled) { background: #f0d8d8; }
+    #btn-flag.active { background: var(--red); color: #fff; }
+
+    #btn-verify {
+      background: var(--green-light);
+      color: var(--green);
+    }
+    #btn-verify:hover:not(:disabled) { background: #d0e8dc; }
+    #btn-verify.active { background: var(--green); color: #fff; }
+
+    /* Navigation */
+    #nav-row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 14px;
+      direction: ltr;
+    }
+    #jump-input {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--text);
+      padding: 8px 12px;
+      font-size: 13px;
+      width: 72px;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      transition: border-color 0.2s;
+    }
+    #jump-input:focus { outline: none; border-color: var(--blue); }
+    .btn-small {
+      background: var(--bg-warm);
+      color: var(--text-secondary);
+      padding: 8px 16px;
+      font-size: 12px;
+      border-radius: 10px;
+    }
+    .btn-small:hover { background: var(--border); }
+
+    /* Filters */
+    #filter-row {
+      display: flex;
+      gap: 6px;
+      justify-content: center;
+      margin-top: 14px;
+      direction: ltr;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      background: transparent;
+      color: var(--text-muted);
+      padding: 6px 14px;
+      font-size: 12px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      transition: all 0.2s;
+    }
+    .filter-btn:hover { border-color: var(--border-focus); color: var(--text-secondary); }
+    .filter-btn.active {
+      background: var(--blue);
+      color: #fff;
+      border-color: var(--blue);
+    }
+
+    /* Export */
+    #export-row {
+      margin-top: 24px;
+      text-align: center;
+      direction: ltr;
+    }
+    #btn-export {
+      background: var(--blue-light);
+      color: var(--blue);
+      padding: 10px 22px;
+      font-size: 12px;
+      border-radius: 10px;
+      letter-spacing: 0.2px;
+    }
+    #btn-export:hover { background: #d8e4f2; }
+
+    /* Divider */
+    .divider {
+      width: 40px;
+      height: 2px;
+      background: var(--border);
+      margin: 0 auto 20px;
+      border-radius: 1px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="header">
+  <h1>Warsh Quran Dataset</h1>
+  <p>Audio-text alignment review</p>
+</div>
+
+<div id="load-area" onclick="document.getElementById('file-input').click()">
+  <p style="color:#8C7E6E; font-size:14px; direction:ltr;">Click to load <strong style="color:#2E5C9A;">train.jsonl</strong></p>
+  <input type="file" id="file-input" accept=".jsonl" style="display:none">
+</div>
+
+<div id="app">
+
+
+  <div id="card">
+    <div id="ref">
+      <span class="badge" id="ref-label">Surah 1 : Ayah 1</span>
+    </div>
+
+    <div id="warsh-text"></div>
+
+    <div class="divider"></div>
+
+    <div id="audio-wrap">
+      <audio id="audio-player" controls preload="auto"></audio>
+    </div>
+    <div id="meta-label" style="display:none"></div>
+
+    <div id="actions">
+      <button class="btn-nav" id="btn-prev" onclick="navigate(-1)">&larr;</button>
+      <button class="btn-nav" id="btn-next" onclick="navigate(1)">&rarr;</button>
+    </div>
+  </div>
+
+  <div id="nav-row">
+    <input type="number" id="jump-input" placeholder="#" min="1">
+    <button class="btn-small" onclick="jumpTo()">Go</button>
+    <button class="btn-small" onclick="goRandom()">Random</button>
+  </div>
+
+</div>
+
+<script>
+  let allEntries = [];
+  let filteredEntries = [];
+  let currentIdx = 0;
+  let reviews = {};
+  let currentFilter = 'all';
+
+  document.getElementById('file-input').addEventListener('change', async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const text = await file.text();
+    allEntries = text.trim().split('\n').map(line => JSON.parse(line));
+    filteredEntries = allEntries;
+    document.getElementById('load-area').style.display = 'none';
+    document.getElementById('app').style.display = 'block';
+    showEntry(0);
+  });
+
+  function applyFilter(filter) {
+    currentFilter = filter;
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('filter-' + filter).classList.add('active');
+
+    if (filter === 'all') {
+      filteredEntries = allEntries;
+    } else if (filter === 'low') {
+      filteredEntries = allEntries.filter(e => e.confidence < 0.7);
+    } else if (filter === 'align') {
+      filteredEntries = allEntries.filter(e => e.alignment_ratio !== undefined && e.alignment_ratio < 0.8);
+    } else if (filter === 'flagged') {
+      filteredEntries = allEntries.filter(e => reviews[key(e)] === 'flagged');
+    } else if (filter === 'unreviewed') {
+      filteredEntries = allEntries.filter(e => !reviews[key(e)]);
+    }
+
+    currentIdx = 0;
+    if (filteredEntries.length > 0) showEntry(0);
+  }
+
+  function setFilter(f) { applyFilter(f); }
+  function key(entry) { return `${entry.surah}_${entry.ayah}`; }
+
+  function showEntry(idx) {
+    if (idx < 0 || idx >= filteredEntries.length) return;
+    currentIdx = idx;
+    const e = filteredEntries[idx];
+    const k = key(e);
+
+    document.getElementById('ref-label').textContent = `Surah ${e.surah} : Ayah ${e.ayah}  (${idx + 1} / ${filteredEntries.length})`;
+
+    document.getElementById('warsh-text').textContent = e.warsh_text;
+
+    const audio = document.getElementById('audio-player');
+    audio.src = e.audio_path;
+    audio.load();
+    audio.play().catch(() => {});
+
+    const metaEl = document.getElementById('meta-label');
+    let metaText = `${e.duration.toFixed(1)}s  ·  ${e.n_words} words`;
+    if (e.alignment_ratio !== undefined) {
+      const pct = Math.round(e.alignment_ratio * 100);
+      const cls = pct >= 90 ? 'align-ok' : pct >= 70 ? 'align-warn' : 'align-bad';
+      metaText += `  ·  <span class="${cls}">${pct}% aligned</span>`;
+    }
+    metaEl.innerHTML = metaText;
+
+    const card = document.getElementById('card');
+    card.className = '';
+
+    document.getElementById('btn-prev').disabled = idx === 0;
+    document.getElementById('btn-next').disabled = idx === filteredEntries.length - 1;
+
+    document.getElementById('progress-fill').style.width = ((idx + 1) / filteredEntries.length * 100) + '%';
+  }
+
+  function navigate(delta) { showEntry(currentIdx + delta); }
+
+  function toggleFlag() {
+    const k = key(filteredEntries[currentIdx]);
+    reviews[k] = reviews[k] === 'flagged' ? null : 'flagged';
+    saveReviews(); showEntry(currentIdx); updateStats();
+  }
+
+  function toggleVerify() {
+    const k = key(filteredEntries[currentIdx]);
+    reviews[k] = reviews[k] === 'verified' ? null : 'verified';
+    saveReviews(); showEntry(currentIdx); updateStats();
+  }
+
+  function saveReviews() { localStorage.setItem('warsh_reviews', JSON.stringify(reviews)); }
+
+  function updateStats() {
+    const flagged = Object.values(reviews).filter(v => v === 'flagged').length;
+    const verified = Object.values(reviews).filter(v => v === 'verified').length;
+    document.getElementById('stat-total').textContent = allEntries.length;
+    document.getElementById('stat-reviewed').textContent = flagged + verified;
+    document.getElementById('stat-verified').textContent = verified;
+    document.getElementById('stat-flagged').textContent = flagged;
+  }
+
+  function jumpTo() {
+    const n = parseInt(document.getElementById('jump-input').value);
+    if (!isNaN(n) && n >= 1 && n <= filteredEntries.length) showEntry(n - 1);
+  }
+
+  function goRandom() { showEntry(Math.floor(Math.random() * filteredEntries.length)); }
+
+  function exportResults() {
+    const flaggedEntries = allEntries.filter(e => reviews[key(e)] === 'flagged');
+    const verifiedEntries = allEntries.filter(e => reviews[key(e)] === 'verified');
+    const blob = new Blob([JSON.stringify({
+      total: allEntries.length,
+      flagged_count: flaggedEntries.length,
+      verified_count: verifiedEntries.length,
+      flagged: flaggedEntries,
+      verified: verifiedEntries,
+    }, null, 2)], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'warsh_review_results.json';
+    a.click();
+  }
+
+  function toggleWhisper() {
+    const el = document.getElementById('whisper-text');
+    const toggle = document.getElementById('whisper-toggle');
+    const visible = el.style.display === 'block';
+    el.style.display = visible ? 'none' : 'block';
+    toggle.textContent = visible ? 'show transcription' : 'hide transcription';
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'INPUT') return;
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') navigate(1);
+    else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') navigate(-1);
+    else if (e.key === 'f' || e.key === 'F') toggleFlag();
+    else if (e.key === 'g' || e.key === 'G') toggleVerify();
+    else if (e.key === ' ') { e.preventDefault(); document.getElementById('audio-player').play(); }
+    else if (e.key === 'r' || e.key === 'R') goRandom();
+  });
+</script>
+</body>
+</html>

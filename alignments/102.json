@@ -1,0 +1,105 @@
+{
+  "audio_id": "67f19e65f8f24ab29a33f21da516020e",
+  "segments": [
+    {
+      "segment": 1,
+      "time_from": 0.88,
+      "time_to": 5.96,
+      "ref_from": "Basmala",
+      "ref_to": "Basmala",
+      "matched_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم",
+      "confidence": 0.955,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 2,
+      "time_from": 7.06,
+      "time_to": 9.82,
+      "ref_from": "102:1:1",
+      "ref_to": "102:1:2",
+      "matched_text": "أَلْهَىٰكُمُ ٱلتَّكَاثُرُ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 3,
+      "time_from": 10.6,
+      "time_to": 13.72,
+      "ref_from": "102:2:1",
+      "ref_to": "102:2:3",
+      "matched_text": "حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 4,
+      "time_from": 14.6,
+      "time_to": 18.68,
+      "ref_from": "102:3:1",
+      "ref_to": "102:3:3",
+      "matched_text": "كَلَّا سَوْفَ تَعْلَمُونَ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 5,
+      "time_from": 19.42,
+      "time_to": 25.115,
+      "ref_from": "102:4:1",
+      "ref_to": "102:4:4",
+      "matched_text": "ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 6,
+      "time_from": 25.915,
+      "time_to": 31.715,
+      "ref_from": "102:5:1",
+      "ref_to": "102:5:5",
+      "matched_text": "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 7,
+      "time_from": 32.475,
+      "time_to": 37.215,
+      "ref_from": "102:6:1",
+      "ref_to": "102:6:2",
+      "matched_text": "لَتَرَوُنَّ ٱلْجَحِيمَ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 8,
+      "time_from": 37.955,
+      "time_to": 45.15,
+      "ref_from": "102:7:1",
+      "ref_to": "102:7:4",
+      "matched_text": "ثُمَّ لَتَرَوُنَّهَا عَيْنَ ٱلْيَقِينِ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 9,
+      "time_from": 46.35,
+      "time_to": 55.11,
+      "ref_from": "102:8:1",
+      "ref_to": "102:8:5",
+      "matched_text": "ثُمَّ لَتُسْـَٔلُنَّ يَوْمَئِذٍ عَنِ ٱلنَّعِيمِ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    }
+  ],
+  "warning": "GPU quota reached — processed on CPU (slower)."
+}

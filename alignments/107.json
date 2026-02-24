@@ -1,0 +1,94 @@
+{
+  "audio_id": "20a0526a464c44e0b945b4a0d7d2abaf",
+  "segments": [
+    {
+      "segment": 1,
+      "time_from": 1.32,
+      "time_to": 6.52,
+      "ref_from": "Basmala",
+      "ref_to": "Basmala",
+      "matched_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم",
+      "confidence": 0.909,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 2,
+      "time_from": 7.5,
+      "time_to": 15.42,
+      "ref_from": "107:1:1",
+      "ref_to": "107:1:4",
+      "matched_text": "أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ",
+      "confidence": 0.913,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 3,
+      "time_from": 16.18,
+      "time_to": 21.515,
+      "ref_from": "107:2:1",
+      "ref_to": "107:2:4",
+      "matched_text": "فَذَٰلِكَ ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 4,
+      "time_from": 22.195,
+      "time_to": 28.315,
+      "ref_from": "107:3:1",
+      "ref_to": "107:3:5",
+      "matched_text": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 5,
+      "time_from": 29.295,
+      "time_to": 33.595,
+      "ref_from": "107:4:1",
+      "ref_to": "107:4:2",
+      "matched_text": "فَوَيْلٌ لِّلْمُصَلِّينَ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 6,
+      "time_from": 35.095,
+      "time_to": 42.37,
+      "ref_from": "107:5:1",
+      "ref_to": "107:5:5",
+      "matched_text": "ٱلَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ",
+      "confidence": 0.955,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 7,
+      "time_from": 43.47,
+      "time_to": 49.67,
+      "ref_from": "107:6:1",
+      "ref_to": "107:6:3",
+      "matched_text": "ٱلَّذِينَ هُمْ يُرَآءُونَ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 8,
+      "time_from": 50.51,
+      "time_to": 54.71,
+      "ref_from": "107:7:1",
+      "ref_to": "107:7:2",
+      "matched_text": "وَيَمْنَعُونَ ٱلْمَاعُونَ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    }
+  ],
+  "warning": "GPU quota reached — processed on CPU (slower)."
+}

@@ -1,0 +1,237 @@
+{
+  "audio_id": "098c793cd85541e08b6686ab159be57b",
+  "segments": [
+    {
+      "segment": 1,
+      "time_from": 0.78,
+      "time_to": 4.46,
+      "ref_from": "Basmala",
+      "ref_to": "Basmala",
+      "matched_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم",
+      "confidence": 0.905,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 2,
+      "time_from": 5.2,
+      "time_to": 8.1,
+      "ref_from": "87:1:1",
+      "ref_to": "87:1:4",
+      "matched_text": "سَبِّحِ ٱسْمَ رَبِّكَ ٱلْأَعْلَى",
+      "confidence": 0.952,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 3,
+      "time_from": 8.68,
+      "time_to": 11.58,
+      "ref_from": "87:2:1",
+      "ref_to": "87:2:3",
+      "matched_text": "ٱلَّذِى خَلَقَ فَسَوَّىٰ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 4,
+      "time_from": 12.56,
+      "time_to": 15.68,
+      "ref_from": "87:3:1",
+      "ref_to": "87:3:3",
+      "matched_text": "وَٱلَّذِى قَدَّرَ فَهَدَىٰ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 5,
+      "time_from": 16.42,
+      "time_to": 21.695,
+      "ref_from": "87:4:1",
+      "ref_to": "87:4:3",
+      "matched_text": "وَٱلَّذِىٓ أَخْرَجَ ٱلْمَرْعَىٰ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 6,
+      "time_from": 22.335,
+      "time_to": 27.475,
+      "ref_from": "87:5:1",
+      "ref_to": "87:5:3",
+      "matched_text": "فَجَعَلَهُۥ غُثَآءً أَحْوَىٰ",
+      "confidence": 0.955,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 7,
+      "time_from": 28.135,
+      "time_to": 32.535,
+      "ref_from": "87:6:1",
+      "ref_to": "87:6:3",
+      "matched_text": "سَنُقْرِئُكَ فَلَا تَنسَىٰٓ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 8,
+      "time_from": 33.255,
+      "time_to": 39.115,
+      "ref_from": "87:7:1",
+      "ref_to": "87:7:4",
+      "matched_text": "إِلَّا مَا شَآءَ ٱللَّهُ ۚ",
+      "confidence": 0.929,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 9,
+      "time_from": 40.01,
+      "time_to": 45.19,
+      "ref_from": "87:7:5",
+      "ref_to": "87:7:9",
+      "matched_text": "إِنَّهُۥ يَعْلَمُ ٱلْجَهْرَ وَمَا يَخْفَىٰ",
+      "confidence": 0.955,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 10,
+      "time_from": 45.89,
+      "time_to": 49.17,
+      "ref_from": "87:8:1",
+      "ref_to": "87:8:2",
+      "matched_text": "وَنُيَسِّرُكَ لِلْيُسْرَىٰ",
+      "confidence": 0.926,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 11,
+      "time_from": 50.57,
+      "time_to": 55.15,
+      "ref_from": "87:9:1",
+      "ref_to": "87:9:4",
+      "matched_text": "فَذَكِّرْ إِن نَّفَعَتِ ٱلذِّكْرَىٰ",
+      "confidence": 0.932,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 12,
+      "time_from": 55.91,
+      "time_to": 60.03,
+      "ref_from": "87:10:1",
+      "ref_to": "87:10:3",
+      "matched_text": "سَيَذَّكَّرُ مَن يَخْشَىٰ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 13,
+      "time_from": 60.625,
+      "time_to": 64.445,
+      "ref_from": "87:11:1",
+      "ref_to": "87:11:2",
+      "matched_text": "وَيَتَجَنَّبُهَا ٱلْأَشْقَى",
+      "confidence": 0.95,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 14,
+      "time_from": 65.165,
+      "time_to": 69.965,
+      "ref_from": "87:12:1",
+      "ref_to": "87:12:4",
+      "matched_text": "ٱلَّذِى يَصْلَى ٱلنَّارَ ٱلْكُبْرَىٰ",
+      "confidence": 0.932,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 15,
+      "time_from": 70.725,
+      "time_to": 76.505,
+      "ref_from": "87:13:1",
+      "ref_to": "87:13:6",
+      "matched_text": "ثُمَّ لَا يَمُوتُ فِيهَا وَلَا يَحْيَىٰ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 16,
+      "time_from": 77.425,
+      "time_to": 81.54,
+      "ref_from": "87:14:1",
+      "ref_to": "87:14:4",
+      "matched_text": "قَدْ أَفْلَحَ مَن تَزَكَّىٰ",
+      "confidence": 0.9,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 17,
+      "time_from": 82.38,
+      "time_to": 86.24,
+      "ref_from": "87:15:1",
+      "ref_to": "87:15:4",
+      "matched_text": "وَذَكَرَ ٱسْمَ رَبِّهِۦ فَصَلَّىٰ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 18,
+      "time_from": 87.2,
+      "time_to": 91.48,
+      "ref_from": "87:16:1",
+      "ref_to": "87:16:4",
+      "matched_text": "بَلْ تُؤْثِرُونَ ٱلْحَيَوٰةَ ٱلدُّنْيَا",
+      "confidence": 0.906,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 19,
+      "time_from": 92.16,
+      "time_to": 98.1,
+      "ref_from": "87:17:1",
+      "ref_to": "87:17:3",
+      "matched_text": "وَٱلْـَٔاخِرَةُ خَيْرٌ وَأَبْقَىٰٓ",
+      "confidence": 0.906,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 20,
+      "time_from": 99.48,
+      "time_to": 105.815,
+      "ref_from": "87:18:1",
+      "ref_to": "87:18:5",
+      "matched_text": "إِنَّ هَـٰذَا لَفِى ٱلصُّحُفِ ٱلْأُولَىٰ",
+      "confidence": 0.957,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 21,
+      "time_from": 106.495,
+      "time_to": 110.235,
+      "ref_from": "87:19:1",
+      "ref_to": "87:19:3",
+      "matched_text": "صُحُفِ إِبْرَٰهِيمَ وَمُوسَىٰ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    }
+  ],
+  "warning": "GPU quota reached — processed on CPU (slower)."
+}

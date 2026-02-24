@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Warsh Recitation Tracker</title>
+<style>
+  :root {
+    --bg: #1a1a2e;
+    --surface: #16213e;
+    --text: #e0e0e0;
+    --text-muted: #666;
+    --accent: #0f3460;
+    --correct: #00b894;
+    --correct-bg: rgba(0, 184, 148, 0.15);
+    --error: #e74c3c;
+    --error-bg: rgba(231, 76, 60, 0.15);
+    --pending: #555;
+    --active-word: rgba(255, 255, 255, 0.08);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    direction: rtl;
+  }
+
+  /* ── Header ─────────────────────────────────────────────── */
+  .header {
+    background: var(--surface);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .header h1 {
+    font-size: 18px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  /* ── Surah Tabs ─────────────────────────────────────────── */
+  .tabs {
+    display: flex;
+    gap: 8px;
+  }
+
+  .tab {
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 15px;
+    font-family: 'Geeza Pro', 'Arabic Typesetting', serif;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .tab:hover { border-color: rgba(255,255,255,0.2); color: var(--text); }
+  .tab.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+
+  /* ── Controls ───────────────────────────────────────────── */
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .btn {
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .btn-start {
+    background: var(--correct);
+    color: #fff;
+  }
+  .btn-start:hover { background: #00a884; }
+  .btn-start:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  .btn-stop {
+    background: var(--error);
+    color: #fff;
+  }
+  .btn-stop:hover { background: #c0392b; }
+
+  .btn-reset {
+    background: rgba(255,255,255,0.08);
+    color: var(--text);
+  }
+  .btn-reset:hover { background: rgba(255,255,255,0.14); }
+
+  /* ── Status ─────────────────────────────────────────────── */
+  .status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  .status-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--text-muted);
+  }
+  .status-dot.connected { background: var(--correct); }
+  .status-dot.recording {
+    background: var(--error);
+    animation: pulse 1s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  /* ── Mushaf Area ────────────────────────────────────────── */
+  .mushaf-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 24px 120px;
+  }
+
+  .surah-header {
+    text-align: center;
+    margin-bottom: 24px;
+    font-family: 'Geeza Pro', 'Arabic Typesetting', serif;
+    font-size: 28px;
+    color: var(--text);
+    opacity: 0.8;
+  }
+
+  .bismillah {
+    text-align: center;
+    font-family: 'Geeza Pro', 'Arabic Typesetting', serif;
+    font-size: 22px;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+  }
+
+  .ayah-block {
+    margin-bottom: 8px;
+    display: inline;
+  }
+
+  .mushaf-text {
+    font-family: 'Geeza Pro', 'Arabic Typesetting', 'Traditional Arabic', serif;
+    font-size: 32px;
+    line-height: 2.4;
+    text-align: justify;
+    direction: rtl;
+  }
+
+  .word {
+    display: inline;
+    padding: 4px 2px;
+    border-radius: 6px;
+    transition: all 0.3s;
+    cursor: default;
+  }
+
+  .word.pending { color: var(--pending); }
+  .word.correct {
+    color: var(--correct);
+    background: var(--correct-bg);
+  }
+  .word.error {
+    color: var(--error);
+    background: var(--error-bg);
+    text-decoration: underline wavy var(--error);
+  }
+  .word.next {
+    background: var(--active-word);
+    color: var(--text);
+  }
+
+  .ayah-num {
+    display: inline-block;
+    font-size: 16px;
+    color: var(--text-muted);
+    margin: 0 6px;
+    vertical-align: middle;
+    opacity: 0.6;
+    font-family: -apple-system, sans-serif;
+  }
+
+  /* ── Transcript debug ───────────────────────────────────── */
+  .transcript-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0; right: 0;
+    background: var(--surface);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 12px 24px;
+    font-size: 14px;
+    direction: rtl;
+    font-family: 'Geeza Pro', serif;
+    color: var(--text-muted);
+    max-height: 80px;
+    overflow-y: auto;
+  }
+
+  .transcript-bar span { color: var(--text); margin-left: 8px; }
+
+  /* ── Progress ───────────────────────────────────────────── */
+  .progress {
+    font-size: 13px;
+    color: var(--text-muted);
+    direction: ltr;
+  }
+
+  .progress-bar {
+    width: 120px;
+    height: 4px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-top: 4px;
+  }
+  .progress-fill {
+    height: 100%;
+    background: var(--correct);
+    transition: width 0.3s;
+    border-radius: 2px;
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Live Warsh Tracker</h1>
+  <div class="tabs">
+    <button class="tab active" data-surah="1">الفاتحة</button>
+    <button class="tab" data-surah="2">البقرة</button>
+  </div>
+  <div class="controls">
+    <div class="status">
+      <div class="status-dot" id="statusDot"></div>
+      <span id="statusText">Connecting…</span>
+    </div>
+    <div class="progress">
+      <span id="progressText">0 / 0</span>
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    </div>
+    <button class="btn btn-start" id="btnStart" disabled>Start</button>
+    <button class="btn btn-reset" id="btnReset">Reset</button>
+  </div>
+</div>
+
+<!-- Mushaf display -->
+<div class="mushaf-container">
+  <div class="surah-header" id="surahHeader"></div>
+  <div class="mushaf-text" id="mushafText">
+    <p style="text-align:center; color:var(--text-muted); font-size:18px;">Loading…</p>
+  </div>
+</div>
+
+<!-- Transcript debug bar -->
+<div class="transcript-bar">
+  Whisper: <span id="transcriptText">—</span>
+</div>
+
+<script>
+// ── State ─────────────────────────────────────────────────────────────────────
+let ws = null;
+let mediaRecorder = null;
+let audioChunks = [];
+let sendInterval = null;
+let recording = false;
+let currentSurah = 1;
+let wordSpans = [];
+
+const btnStart = document.getElementById('btnStart');
+const btnReset = document.getElementById('btnReset');
+const statusDot = document.getElementById('statusDot');
+const statusText = document.getElementById('statusText');
+const mushafText = document.getElementById('mushafText');
+const surahHeader = document.getElementById('surahHeader');
+const transcriptText = document.getElementById('transcriptText');
+const progressText = document.getElementById('progressText');
+const progressFill = document.getElementById('progressFill');
+
+// ── WebSocket ─────────────────────────────────────────────────────────────────
+function connectWS() {
+  const proto = location.protocol === 'https:' ? 'wss' : 'ws';
+  ws = new WebSocket(`${proto}://${location.host}/ws`);
+
+  ws.onopen = () => {
+    statusDot.className = 'status-dot connected';
+    statusText.textContent = 'Connected';
+    btnStart.disabled = false;
+    // Auto-select current surah
+    ws.send(JSON.stringify({ cmd: 'select_surah', surah: currentSurah }));
+  };
+
+  ws.onmessage = (evt) => {
+    const data = JSON.parse(evt.data);
+    if (data.type === 'surah_loaded') {
+      renderSurah(data);
+    } else if (data.type === 'update') {
+      updateStates(data);
+    } else if (data.type === 'error') {
+      console.error('Server error:', data.message);
+    }
+  };
+
+  ws.onclose = () => {
+    statusDot.className = 'status-dot';
+    statusText.textContent = 'Disconnected';
+    btnStart.disabled = true;
+    // Reconnect after 2s
+    setTimeout(connectWS, 2000);
+  };
+
+  ws.onerror = () => ws.close();
+}
+
+// ── Render surah words ────────────────────────────────────────────────────────
+function renderSurah(data) {
+  surahHeader.textContent = `سورة ${getSurahName(data.surah)}`;
+  mushafText.innerHTML = '';
+  wordSpans = [];
+
+  let currentAyah = 0;
+
+  data.words.forEach((w, i) => {
+    // Ayah number marker at the start of each new ayah
+    if (w.ayah !== currentAyah) {
+      if (currentAyah > 0) {
+        const marker = document.createElement('span');
+        marker.className = 'ayah-num';
+        marker.textContent = `﴿${currentAyah}﴾`;
+        mushafText.appendChild(marker);
+        mushafText.appendChild(document.createTextNode(' '));
+      }
+      currentAyah = w.ayah;
+    }
+
+    const span = document.createElement('span');
+    span.className = 'word pending';
+    span.textContent = w.word;
+    span.dataset.index = i;
+    mushafText.appendChild(span);
+    mushafText.appendChild(document.createTextNode(' '));
+    wordSpans.push(span);
+  });
+
+  // Final ayah marker
+  if (currentAyah > 0) {
+    const marker = document.createElement('span');
+    marker.className = 'ayah-num';
+    marker.textContent = `﴿${currentAyah}﴾`;
+    mushafText.appendChild(marker);
+  }
+
+  // Mark first word as next
+  if (wordSpans.length > 0) {
+    wordSpans[0].classList.add('next');
+  }
+
+  updateProgress(0, wordSpans.length);
+}
+
+function getSurahName(num) {
+  return num === 1 ? 'الفاتحة' : 'البقرة';
+}
+
+// ── Update word states from server ────────────────────────────────────────────
+function updateStates(data) {
+  if (data.transcript) {
+    transcriptText.textContent = data.transcript;
+  }
+
+  if (!data.states) return;
+
+  let correctCount = 0;
+  data.states.forEach((state, i) => {
+    if (i < wordSpans.length) {
+      wordSpans[i].className = `word ${state}`;
+      if (state === 'correct') correctCount++;
+    }
+  });
+
+  // Highlight next expected word
+  const cursor = data.cursor || 0;
+  if (cursor < wordSpans.length) {
+    wordSpans[cursor].classList.add('next');
+    // Auto-scroll to current word
+    wordSpans[cursor].scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  updateProgress(correctCount, wordSpans.length);
+}
+
+function updateProgress(correct, total) {
+  progressText.textContent = `${correct} / ${total}`;
+  const pct = total > 0 ? (correct / total * 100) : 0;
+  progressFill.style.width = `${pct}%`;
+}
+
+// ── Audio recording ───────────────────────────────────────────────────────────
+let micStream = null;
+let sending = false;
+
+const MIME = MediaRecorder.isTypeSupported('audio/webm;codecs=opus')
+  ? 'audio/webm;codecs=opus' : 'audio/webm';
+
+function createRecorder() {
+  const rec = new MediaRecorder(micStream, { mimeType: MIME });
+  rec.ondataavailable = (e) => {
+    if (e.data.size > 0) audioChunks.push(e.data);
+  };
+  rec.onstop = () => {
+    if (!recording) return;
+    // Send the completed blob
+    if (audioChunks.length > 0 && ws && ws.readyState === WebSocket.OPEN && !sending) {
+      sending = true;
+      const blob = new Blob(audioChunks, { type: MIME });
+      blob.arrayBuffer().then(buf => {
+        ws.send(buf);
+        sending = false;
+      });
+    }
+    audioChunks = [];
+    // Start a new recording cycle
+    if (recording && micStream && micStream.active) {
+      mediaRecorder = createRecorder();
+      mediaRecorder.start();
+    }
+  };
+  return rec;
+}
+
+async function startRecording() {
+  try {
+    micStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    audioChunks = [];
+
+    mediaRecorder = createRecorder();
+    mediaRecorder.start();
+    recording = true;
+
+    // Stop recorder every 3s to produce a complete, self-contained blob
+    sendInterval = setInterval(() => {
+      if (mediaRecorder && mediaRecorder.state === 'recording') {
+        mediaRecorder.stop();  // triggers onstop → send → restart
+      }
+    }, 1500);
+
+    btnStart.textContent = 'Stop';
+    btnStart.className = 'btn btn-stop';
+    statusDot.className = 'status-dot recording';
+    statusText.textContent = 'Recording…';
+
+  } catch (err) {
+    console.error('Mic access error:', err);
+    statusText.textContent = 'Mic denied';
+  }
+}
+
+function stopRecording() {
+  recording = false;
+  if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+    mediaRecorder.stop();
+  }
+  if (micStream) {
+    micStream.getTracks().forEach(t => t.stop());
+    micStream = null;
+  }
+  if (sendInterval) {
+    clearInterval(sendInterval);
+    sendInterval = null;
+  }
+  audioChunks = [];
+
+  btnStart.textContent = 'Start';
+  btnStart.className = 'btn btn-start';
+  statusDot.className = 'status-dot connected';
+  statusText.textContent = 'Connected';
+}
+
+// ── Event listeners ───────────────────────────────────────────────────────────
+btnStart.addEventListener('click', () => {
+  if (recording) {
+    stopRecording();
+  } else {
+    startRecording();
+  }
+});
+
+btnReset.addEventListener('click', () => {
+  stopRecording();
+  if (ws && ws.readyState === WebSocket.OPEN) {
+    ws.send(JSON.stringify({ cmd: 'reset' }));
+  }
+  transcriptText.textContent = '—';
+});
+
+// Surah tabs
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    stopRecording();
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    currentSurah = parseInt(tab.dataset.surah);
+    if (ws && ws.readyState === WebSocket.OPEN) {
+      ws.send(JSON.stringify({ cmd: 'select_surah', surah: currentSurah }));
+    }
+    transcriptText.textContent = '—';
+  });
+});
+
+// ── Init ──────────────────────────────────────────────────────────────────────
+connectWS();
+</script>
+</body>
+</html>

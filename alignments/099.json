@@ -1,0 +1,105 @@
+{
+  "audio_id": "6a9cb431b4244d2aa93e96a00cb0a96d",
+  "segments": [
+    {
+      "segment": 1,
+      "time_from": 2.44,
+      "time_to": 7.38,
+      "ref_from": "Basmala",
+      "ref_to": "Basmala",
+      "matched_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم",
+      "confidence": 0.955,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 2,
+      "time_from": 8.3,
+      "time_to": 12.5,
+      "ref_from": "99:1:1",
+      "ref_to": "99:1:4",
+      "matched_text": "إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا",
+      "confidence": 0.964,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 3,
+      "time_from": 13.42,
+      "time_to": 17.16,
+      "ref_from": "99:2:1",
+      "ref_to": "99:2:3",
+      "matched_text": "وَأَخْرَجَتِ ٱلْأَرْضُ أَثْقَالَهَا",
+      "confidence": 0.923,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 4,
+      "time_from": 18.1,
+      "time_to": 22.635,
+      "ref_from": "99:3:1",
+      "ref_to": "99:3:4",
+      "matched_text": "وَقَالَ ٱلْإِنسَـٰنُ مَا لَهَا",
+      "confidence": 0.9,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 5,
+      "time_from": 23.435,
+      "time_to": 28.815,
+      "ref_from": "99:4:1",
+      "ref_to": "99:4:3",
+      "matched_text": "يَوْمَئِذٍ تُحَدِّثُ أَخْبَارَهَا",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 6,
+      "time_from": 29.595,
+      "time_to": 34.155,
+      "ref_from": "99:5:1",
+      "ref_to": "99:5:4",
+      "matched_text": "بِأَنَّ رَبَّكَ أَوْحَىٰ لَهَا",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 7,
+      "time_from": 35.755,
+      "time_to": 44.01,
+      "ref_from": "99:6:1",
+      "ref_to": "99:6:6",
+      "matched_text": "يَوْمَئِذٍ يَصْدُرُ ٱلنَّاسُ أَشْتَاتًا لِّيُرَوْا۟ أَعْمَـٰلَهُمْ",
+      "confidence": 0.977,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 8,
+      "time_from": 45.29,
+      "time_to": 52.35,
+      "ref_from": "99:7:1",
+      "ref_to": "99:7:6",
+      "matched_text": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُۥ",
+      "confidence": 0.985,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 9,
+      "time_from": 53.21,
+      "time_to": 61.105,
+      "ref_from": "99:8:1",
+      "ref_to": "99:8:6",
+      "matched_text": "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُۥ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    }
+  ],
+  "warning": "GPU quota reached — processed on CPU (slower)."
+}

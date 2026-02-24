@@ -1,0 +1,50 @@
+{
+  "audio_id": "6ccd1a490dba4cc1958170a73d4ae2ee",
+  "segments": [
+    {
+      "segment": 1,
+      "time_from": 1.14,
+      "time_to": 5.98,
+      "ref_from": "Basmala",
+      "ref_to": "Basmala",
+      "matched_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم",
+      "confidence": 0.952,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 2,
+      "time_from": 6.84,
+      "time_to": 12.98,
+      "ref_from": "108:1:1",
+      "ref_to": "108:1:3",
+      "matched_text": "إِنَّآ أَعْطَيْنَـٰكَ ٱلْكَوْثَرَ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 3,
+      "time_from": 13.8,
+      "time_to": 16.64,
+      "ref_from": "108:2:1",
+      "ref_to": "108:2:3",
+      "matched_text": "فَصَلِّ لِرَبِّكَ وَٱنْحَرْ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 4,
+      "time_from": 17.84,
+      "time_to": 21.515,
+      "ref_from": "108:3:1",
+      "ref_to": "108:3:4",
+      "matched_text": "إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ",
+      "confidence": 0.958,
+      "has_missing_words": false,
+      "error": null
+    }
+  ],
+  "warning": "GPU quota reached — processed on CPU (slower)."
+}

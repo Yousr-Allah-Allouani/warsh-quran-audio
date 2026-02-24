@@ -1,0 +1,72 @@
+{
+  "audio_id": "c37337c8a9ac46cf8c933602d002d3cc",
+  "segments": [
+    {
+      "segment": 1,
+      "time_from": 0.48,
+      "time_to": 5.2,
+      "ref_from": "Basmala",
+      "ref_to": "Basmala",
+      "matched_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 2,
+      "time_from": 6.14,
+      "time_to": 12.8,
+      "ref_from": "111:1:1",
+      "ref_to": "111:1:5",
+      "matched_text": "تَبَّتْ يَدَآ أَبِى لَهَبٍ وَتَبَّ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 3,
+      "time_from": 13.54,
+      "time_to": 19.72,
+      "ref_from": "111:2:1",
+      "ref_to": "111:2:6",
+      "matched_text": "مَآ أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 4,
+      "time_from": 20.635,
+      "time_to": 24.855,
+      "ref_from": "111:3:1",
+      "ref_to": "111:3:4",
+      "matched_text": "سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 5,
+      "time_from": 25.515,
+      "time_to": 30.155,
+      "ref_from": "111:4:1",
+      "ref_to": "111:4:3",
+      "matched_text": "وَٱمْرَأَتُهُۥ حَمَّالَةَ ٱلْحَطَبِ",
+      "confidence": 0.962,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 6,
+      "time_from": 30.875,
+      "time_to": 35.875,
+      "ref_from": "111:5:1",
+      "ref_to": "111:5:5",
+      "matched_text": "فِى جِيدِهَا حَبْلٌ مِّن مَّسَدٍ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    }
+  ],
+  "warning": "GPU quota reached — processed on CPU (slower)."
+}

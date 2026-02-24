@@ -1,0 +1,72 @@
+{
+  "audio_id": "96a74f72dfc94731adef3e23bc62b53f",
+  "segments": [
+    {
+      "segment": 1,
+      "time_from": 0.66,
+      "time_to": 5.6,
+      "ref_from": "Basmala",
+      "ref_to": "Basmala",
+      "matched_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم",
+      "confidence": 0.955,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 2,
+      "time_from": 6.74,
+      "time_to": 13.14,
+      "ref_from": "105:1:1",
+      "ref_to": "105:1:7",
+      "matched_text": "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَـٰبِ ٱلْفِيلِ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 3,
+      "time_from": 14.0,
+      "time_to": 19.3,
+      "ref_from": "105:2:1",
+      "ref_to": "105:2:5",
+      "matched_text": "أَلَمْ يَجْعَلْ كَيْدَهُمْ فِى تَضْلِيلٍ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 4,
+      "time_from": 20.055,
+      "time_to": 25.635,
+      "ref_from": "105:3:1",
+      "ref_to": "105:3:4",
+      "matched_text": "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ",
+      "confidence": 0.95,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 5,
+      "time_from": 26.475,
+      "time_to": 34.635,
+      "ref_from": "105:4:1",
+      "ref_to": "105:4:4",
+      "matched_text": "تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 6,
+      "time_from": 35.855,
+      "time_to": 41.49,
+      "ref_from": "105:5:1",
+      "ref_to": "105:5:3",
+      "matched_text": "فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍ",
+      "confidence": 0.938,
+      "has_missing_words": false,
+      "error": null
+    }
+  ],
+  "warning": "GPU quota reached — processed on CPU (slower)."
+}

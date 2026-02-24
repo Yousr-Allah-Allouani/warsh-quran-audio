@@ -1,0 +1,292 @@
+{
+  "audio_id": "b35d0b2455cd4fc1a500d1afa6828893",
+  "segments": [
+    {
+      "segment": 1,
+      "time_from": 1.04,
+      "time_to": 6.22,
+      "ref_from": "Basmala",
+      "ref_to": "Basmala",
+      "matched_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 2,
+      "time_from": 7.12,
+      "time_to": 12.88,
+      "ref_from": "84:1:1",
+      "ref_to": "84:1:3",
+      "matched_text": "إِذَا ٱلسَّمَآءُ ٱنشَقَّتْ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 3,
+      "time_from": 13.7,
+      "time_to": 17.36,
+      "ref_from": "84:2:1",
+      "ref_to": "84:2:3",
+      "matched_text": "وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 4,
+      "time_from": 18.26,
+      "time_to": 20.615,
+      "ref_from": "84:3:1",
+      "ref_to": "84:3:3",
+      "matched_text": "وَإِذَا ٱلْأَرْضُ مُدَّتْ",
+      "confidence": 0.941,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 5,
+      "time_from": 21.395,
+      "time_to": 25.395,
+      "ref_from": "84:4:1",
+      "ref_to": "84:4:4",
+      "matched_text": "وَأَلْقَتْ مَا فِيهَا وَتَخَلَّتْ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 6,
+      "time_from": 26.155,
+      "time_to": 29.795,
+      "ref_from": "84:5:1",
+      "ref_to": "84:5:3",
+      "matched_text": "وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 7,
+      "time_from": 30.815,
+      "time_to": 44.53,
+      "ref_from": "84:6:1",
+      "ref_to": "84:6:8",
+      "matched_text": "يَـٰٓأَيُّهَا ٱلْإِنسَـٰنُ إِنَّكَ كَادِحٌ إِلَىٰ رَبِّكَ كَدْحًا فَمُلَـٰقِيهِ",
+      "confidence": 0.964,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 8,
+      "time_from": 46.67,
+      "time_to": 53.57,
+      "ref_from": "84:7:1",
+      "ref_to": "84:7:5",
+      "matched_text": "فَأَمَّا مَنْ أُوتِىَ كِتَـٰبَهُۥ بِيَمِينِهِۦ",
+      "confidence": 0.969,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 9,
+      "time_from": 54.43,
+      "time_to": 59.97,
+      "ref_from": "84:8:1",
+      "ref_to": "84:8:4",
+      "matched_text": "فَسَوْفَ يُحَاسَبُ حِسَابًا يَسِيرًا",
+      "confidence": 0.981,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 10,
+      "time_from": 60.825,
+      "time_to": 68.105,
+      "ref_from": "84:9:1",
+      "ref_to": "84:9:4",
+      "matched_text": "وَيَنقَلِبُ إِلَىٰٓ أَهْلِهِۦ مَسْرُورًا",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 11,
+      "time_from": 69.185,
+      "time_to": 78.265,
+      "ref_from": "84:10:1",
+      "ref_to": "84:10:6",
+      "matched_text": "وَأَمَّا مَنْ أُوتِىَ كِتَـٰبَهُۥ وَرَآءَ ظَهْرِهِۦ",
+      "confidence": 0.971,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 12,
+      "time_from": 79.005,
+      "time_to": 82.2,
+      "ref_from": "84:11:1",
+      "ref_to": "84:11:3",
+      "matched_text": "فَسَوْفَ يَدْعُوا۟ ثُبُورًا",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 13,
+      "time_from": 83.26,
+      "time_to": 86.2,
+      "ref_from": "84:12:1",
+      "ref_to": "84:12:2",
+      "matched_text": "وَيَصْلَىٰ سَعِيرًا",
+      "confidence": 0.818,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 14,
+      "time_from": 86.96,
+      "time_to": 94.46,
+      "ref_from": "84:13:1",
+      "ref_to": "84:13:5",
+      "matched_text": "إِنَّهُۥ كَانَ فِىٓ أَهْلِهِۦ مَسْرُورًا",
+      "confidence": 0.962,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 15,
+      "time_from": 95.34,
+      "time_to": 102.835,
+      "ref_from": "84:14:1",
+      "ref_to": "84:14:5",
+      "matched_text": "إِنَّهُۥ ظَنَّ أَن لَّن يَحُورَ",
+      "confidence": 1.0,
+      "has_missing_words": true,
+      "error": null
+    },
+    {
+      "segment": 16,
+      "time_from": 105.495,
+      "time_to": 110.595,
+      "ref_from": "84:15:2",
+      "ref_to": "84:15:6",
+      "matched_text": "إِنَّ رَبَّهُۥ كَانَ بِهِۦ بَصِيرًا",
+      "confidence": 0.979,
+      "has_missing_words": true,
+      "error": null
+    },
+    {
+      "segment": 17,
+      "time_from": 111.495,
+      "time_to": 116.155,
+      "ref_from": "84:16:1",
+      "ref_to": "84:16:3",
+      "matched_text": "فَلَآ أُقْسِمُ بِٱلشَّفَقِ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 18,
+      "time_from": 116.835,
+      "time_to": 119.475,
+      "ref_from": "84:17:1",
+      "ref_to": "84:17:3",
+      "matched_text": "وَٱلَّيْلِ وَمَا وَسَقَ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 19,
+      "time_from": 120.09,
+      "time_to": 122.73,
+      "ref_from": "84:18:1",
+      "ref_to": "84:18:3",
+      "matched_text": "وَٱلْقَمَرِ إِذَا ٱتَّسَقَ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 20,
+      "time_from": 123.41,
+      "time_to": 129.27,
+      "ref_from": "84:19:1",
+      "ref_to": "84:19:4",
+      "matched_text": "لَتَرْكَبُنَّ طَبَقًا عَن طَبَقٍ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 21,
+      "time_from": 130.01,
+      "time_to": 134.29,
+      "ref_from": "84:20:1",
+      "ref_to": "84:20:4",
+      "matched_text": "فَمَا لَهُمْ لَا يُؤْمِنُونَ",
+      "confidence": 0.934,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 22,
+      "time_from": 135.01,
+      "time_to": 142.185,
+      "ref_from": "84:21:1",
+      "ref_to": "84:21:6",
+      "matched_text": "وَإِذَا قُرِئَ عَلَيْهِمُ ٱلْقُرْءَانُ لَا يَسْجُدُونَ ۩",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 23,
+      "time_from": 143.145,
+      "time_to": 148.605,
+      "ref_from": "84:22:1",
+      "ref_to": "84:22:4",
+      "matched_text": "بَلِ ٱلَّذِينَ كَفَرُوا۟ يُكَذِّبُونَ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 24,
+      "time_from": 149.425,
+      "time_to": 154.805,
+      "ref_from": "84:23:1",
+      "ref_to": "84:23:4",
+      "matched_text": "وَٱللَّهُ أَعْلَمُ بِمَا يُوعُونَ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 25,
+      "time_from": 155.525,
+      "time_to": 161.74,
+      "ref_from": "84:24:1",
+      "ref_to": "84:24:3",
+      "matched_text": "فَبَشِّرْهُم بِعَذَابٍ أَلِيمٍ",
+      "confidence": 0.958,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 26,
+      "time_from": 163.38,
+      "time_to": 176.42,
+      "ref_from": "84:25:1",
+      "ref_to": "84:25:9",
+      "matched_text": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ لَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ",
+      "confidence": 0.986,
+      "has_missing_words": false,
+      "error": null
+    }
+  ],
+  "warning": "GPU quota reached — processed on CPU (slower)."
+}

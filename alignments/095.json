@@ -1,0 +1,105 @@
+{
+  "audio_id": "6d5ce959ddf743abaafa7c82c68542c6",
+  "segments": [
+    {
+      "segment": 1,
+      "time_from": 0.76,
+      "time_to": 5.94,
+      "ref_from": "Basmala",
+      "ref_to": "Basmala",
+      "matched_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم",
+      "confidence": 0.905,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 2,
+      "time_from": 6.62,
+      "time_to": 10.88,
+      "ref_from": "95:1:1",
+      "ref_to": "95:1:2",
+      "matched_text": "وَٱلتِّينِ وَٱلزَّيْتُونِ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 3,
+      "time_from": 11.58,
+      "time_to": 15.08,
+      "ref_from": "95:2:1",
+      "ref_to": "95:2:2",
+      "matched_text": "وَطُورِ سِينِينَ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 4,
+      "time_from": 15.62,
+      "time_to": 19.7,
+      "ref_from": "95:3:1",
+      "ref_to": "95:3:3",
+      "matched_text": "وَهَـٰذَا ٱلْبَلَدِ ٱلْأَمِينِ",
+      "confidence": 0.947,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 5,
+      "time_from": 20.335,
+      "time_to": 29.375,
+      "ref_from": "95:4:1",
+      "ref_to": "95:4:6",
+      "matched_text": "لَقَدْ خَلَقْنَا ٱلْإِنسَـٰنَ فِىٓ أَحْسَنِ تَقْوِيمٍ",
+      "confidence": 0.974,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 6,
+      "time_from": 30.195,
+      "time_to": 36.675,
+      "ref_from": "95:5:1",
+      "ref_to": "95:5:4",
+      "matched_text": "ثُمَّ رَدَدْنَـٰهُ أَسْفَلَ سَـٰفِلِينَ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 7,
+      "time_from": 38.195,
+      "time_to": 52.03,
+      "ref_from": "95:6:1",
+      "ref_to": "95:6:9",
+      "matched_text": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ فَلَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ",
+      "confidence": 0.986,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 8,
+      "time_from": 53.01,
+      "time_to": 58.33,
+      "ref_from": "95:7:1",
+      "ref_to": "95:7:4",
+      "matched_text": "فَمَا يُكَذِّبُكَ بَعْدُ بِٱلدِّينِ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 9,
+      "time_from": 58.99,
+      "time_to": 64.765,
+      "ref_from": "95:8:1",
+      "ref_to": "95:8:4",
+      "matched_text": "أَلَيْسَ ٱللَّهُ بِأَحْكَمِ ٱلْحَـٰكِمِينَ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    }
+  ],
+  "warning": "GPU quota reached — processed on CPU (slower)."
+}

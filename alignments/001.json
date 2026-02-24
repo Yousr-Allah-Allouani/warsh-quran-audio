@@ -1,0 +1,94 @@
+{
+  "audio_id": "6e94c184548844faabd9ebbc8007f173",
+  "segments": [
+    {
+      "segment": 1,
+      "time_from": 1.88,
+      "time_to": 6.76,
+      "ref_from": "Isti'adha",
+      "ref_to": "Isti'adha",
+      "matched_text": "أَعُوذُ بِٱللَّهِ مِنَ الشَّيْطَانِ الرَّجِيم",
+      "confidence": 0.929,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 2,
+      "time_from": 7.6,
+      "time_to": 11.76,
+      "ref_from": "Basmala",
+      "ref_to": "Basmala",
+      "matched_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم",
+      "confidence": 0.952,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 3,
+      "time_from": 12.9,
+      "time_to": 17.42,
+      "ref_from": "1:2:1",
+      "ref_to": "1:2:4",
+      "matched_text": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 4,
+      "time_from": 18.42,
+      "time_to": 21.875,
+      "ref_from": "1:3:1",
+      "ref_to": "1:3:2",
+      "matched_text": "ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+      "confidence": 0.947,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 5,
+      "time_from": 22.895,
+      "time_to": 26.275,
+      "ref_from": "1:4:1",
+      "ref_to": "1:4:3",
+      "matched_text": "مَـٰلِكِ يَوْمِ ٱلدِّينِ",
+      "confidence": 0.982,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 6,
+      "time_from": 27.635,
+      "time_to": 32.855,
+      "ref_from": "1:5:1",
+      "ref_to": "1:5:4",
+      "matched_text": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 7,
+      "time_from": 33.695,
+      "time_to": 38.175,
+      "ref_from": "1:6:1",
+      "ref_to": "1:6:3",
+      "matched_text": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 8,
+      "time_from": 39.575,
+      "time_to": 52.01,
+      "ref_from": "1:7:1",
+      "ref_to": "1:7:9",
+      "matched_text": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    }
+  ],
+  "warning": "GPU quota reached — processed on CPU (slower)."
+}

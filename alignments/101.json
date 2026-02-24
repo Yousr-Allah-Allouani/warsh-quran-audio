@@ -1,0 +1,138 @@
+{
+  "audio_id": "a77d8b12608746c0bcd60d3fa2ad1b29",
+  "segments": [
+    {
+      "segment": 1,
+      "time_from": 1.1,
+      "time_to": 6.24,
+      "ref_from": "Basmala",
+      "ref_to": "Basmala",
+      "matched_text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 2,
+      "time_from": 7.12,
+      "time_to": 8.76,
+      "ref_from": "101:1:1",
+      "ref_to": "101:1:1",
+      "matched_text": "ٱلْقَارِعَةُ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 3,
+      "time_from": 9.64,
+      "time_to": 11.36,
+      "ref_from": "101:2:1",
+      "ref_to": "101:2:2",
+      "matched_text": "مَا ٱلْقَارِعَةُ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 4,
+      "time_from": 12.12,
+      "time_to": 17.26,
+      "ref_from": "101:3:1",
+      "ref_to": "101:3:4",
+      "matched_text": "وَمَآ أَدْرَىٰكَ مَا ٱلْقَارِعَةُ",
+      "confidence": 0.911,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 5,
+      "time_from": 18.22,
+      "time_to": 25.275,
+      "ref_from": "101:4:1",
+      "ref_to": "101:4:5",
+      "matched_text": "يَوْمَ يَكُونُ ٱلنَّاسُ كَٱلْفَرَاشِ ٱلْمَبْثُوثِ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 6,
+      "time_from": 26.155,
+      "time_to": 33.275,
+      "ref_from": "101:5:1",
+      "ref_to": "101:5:4",
+      "matched_text": "وَتَكُونُ ٱلْجِبَالُ كَٱلْعِهْنِ ٱلْمَنفُوشِ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 7,
+      "time_from": 34.375,
+      "time_to": 39.955,
+      "ref_from": "101:6:1",
+      "ref_to": "101:6:4",
+      "matched_text": "فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 8,
+      "time_from": 40.73,
+      "time_to": 44.11,
+      "ref_from": "101:7:1",
+      "ref_to": "101:7:4",
+      "matched_text": "فَهُوَ فِى عِيشَةٍ رَّاضِيَةٍ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 9,
+      "time_from": 44.97,
+      "time_to": 49.95,
+      "ref_from": "101:8:1",
+      "ref_to": "101:8:4",
+      "matched_text": "وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 10,
+      "time_from": 50.69,
+      "time_to": 53.95,
+      "ref_from": "101:9:1",
+      "ref_to": "101:9:2",
+      "matched_text": "فَأُمُّهُۥ هَاوِيَةٌ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 11,
+      "time_from": 54.73,
+      "time_to": 59.41,
+      "ref_from": "101:10:1",
+      "ref_to": "101:10:4",
+      "matched_text": "وَمَآ أَدْرَىٰكَ مَا هِيَهْ",
+      "confidence": 0.934,
+      "has_missing_words": false,
+      "error": null
+    },
+    {
+      "segment": 12,
+      "time_from": 59.985,
+      "time_to": 62.165,
+      "ref_from": "101:11:1",
+      "ref_to": "101:11:2",
+      "matched_text": "نَارٌ حَامِيَةٌ",
+      "confidence": 1.0,
+      "has_missing_words": false,
+      "error": null
+    }
+  ],
+  "warning": "GPU quota reached — processed on CPU (slower)."
+}
